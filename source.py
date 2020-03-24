@@ -96,7 +96,7 @@ class MyClient(discord.Client):
             await message.channel.send(embed=embed)
 
         if message.content.startswith('!아침'):
-            with open(r'C:\Users\ksh04\Desktop\project\Python\DiscordBot\LeagueBot\dinner.json', encoding='utf-8') as json_file:
+            with open(r'project_path\LeagueBot\dinner.json', encoding='utf-8') as json_file:
                 json_data = json.load(json_file)
                 dinner_list = json_data['word_list']
                 array_index = random.randrange(0, len(dinner_list))
@@ -107,7 +107,7 @@ class MyClient(discord.Client):
                 await message.channel.send(embed=embed)
 
         if message.content.startswith('!강아지'):
-            with open(r'C:\Users\ksh04\Desktop\project\Python\DiscordBot\LeagueBot\dinner.json', encoding='utf-8') as json_file:
+            with open(r'project_path\LeagueBot\dinner.json', encoding='utf-8') as json_file:
                 json_data = json.load(json_file)
                 img_list = json_data['img_dog_list']
                 array_index = random.randrange(0, len(img_list))
