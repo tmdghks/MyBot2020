@@ -10,9 +10,9 @@ import asyncio
 import math
 
 client = discord.Client()
-discord_token = "discord_token"
-riot_api_key = "riot_api_key"
-json_path = r'PROJECT_PATH\bot.json'
+discord_token = "token"
+riot_api_key = "api_key"
+json_path = 'json_path'
 dinner_list = []
 img_list = []
 study_bool = True
@@ -37,8 +37,7 @@ def get_rank(summoner_name: str):
         summoner_league_data = requests.get(
             'https://kr.api.riotgames.com/lol/league/v4/entries/by-summoner/' + summoner_id + '?api_key=' + riot_api_key).json()[0]
         summoner_tier = summoner_league_data['tier']
-        summoner_rank = summoner_league_data['tier'] + \
-            ' ' + summoner_league_data['rank']
+        summoner_rank = summoner_league_data['tier'] + ' ' + summoner_league_data['rank']
         summoner_lp = summoner_league_data['leaguePoints']
     except:
         embed = discord.Embed(
@@ -113,9 +112,8 @@ async def my_background_task():
             json_data['price'] =  str(math.ceil(json_data['price'] * (random.randrange(80, 120) / 100)))
         else:
             json_data['price'] = str(math.ceil(json_data['price'] * (random.randrange(85, 130) / 100)))
-        print(json_data['price'])
     with open(json_path, encoding='utf-8', mode='w') as json_file:   
-        json.dump(json_data, json_file, indent=4)
+        json.dump(json_data, json_file, indent=4, ensure_ascii=False)
     game = discord.Game('현재 상추값: {}원 '.format(json_data['price']))
     await client.change_presence(status=discord.Status.idle, activity=game)
 
@@ -267,7 +265,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if message.content.startswith('!지갑') and not message.content.startswith('!지갑만들기'):
-        with open(json_path) as json_file:
+        with open(json_path, encoding='utf-8') as json_file:
             json_data = json.load(json_file)
             try:
                 current_wallet = json_data['wallet'][str(message.author)]
@@ -284,7 +282,7 @@ async def on_message(message):
                 await message.channel.send(embed=embed)
 
     if message.content.startswith('!지갑만들기'):
-        with open(json_path, mode='r') as json_file:
+        with open(json_path, mode='r', encoding='utf-8') as json_file:
             json_data = json.load(json_file)
             if str(message.author) in json_data['wallet']:
                 embed = discord.Embed(
@@ -294,8 +292,8 @@ async def on_message(message):
                 await message.channel.send(embed=embed)
             else:
                 json_data['wallet'][str(message.author)] = {"잔액" : "1000", "상추" : "0"}
-                with open(json_path, mode='w') as json_file:
-                    json.dump(json_data, json_file, indent=4)
+                with open(json_path, mode='w', encoding='utf-8') as json_file:
+                    json.dump(json_data, json_file, indent=4, ensure_ascii = False)
                 embed = discord.Embed(
                     title = str(message.author) + '님의 지갑을 생성했습니다.',
                     color = 0x00FF00
@@ -305,7 +303,7 @@ async def on_message(message):
                 await message.channel.send(embed=embed)
 
     if message.content.startswith('!상추') and not message.content.startswith('!상추값'):
-        with open(json_path, mode='r') as json_file:
+        with open(json_path, mode='r', encoding='utf-8') as json_file:
             json_data = json.load(json_file)
             moo_price = int(json_data['price'])
             wallet = json_data['wallet'][str(message.author)]
@@ -379,8 +377,18 @@ async def on_message(message):
                     title='지갑이 생성되지 않았습니다. 지갑을 먼저 만들어주세요.',
                     color=0xFF00000
                 ))
-        with open(json_path, mode='w') as json_file:
-            json.dump(json_data, json_file, indent=4)
+        with open(json_path, mode='w', encoding='utf-8') as json_file:
+            json.dump(json_data, json_file, indent=4, ensure_ascii = False)
 
+    if message.content.startswith('!롤챔피언'):
+        with open(json_path, mode='r', encoding='utf-8') as json_file:
+            json_data = json.load(json_file)
+            league_champions_list = json_data['league_champions_list']
+            random_dic = league_champions_list[random.randrange(0, len(league_champions_list))]
+            embed = discord.Embed(
+                title = random_dic
+            )
+            embed.set_image(url=json_data['league_champions_dict'][random_dic]['image'])
+            await message.channel.send(embed=embed)
 
 client.run(discord_token)

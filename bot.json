@@ -1,12 +1,756 @@
 {
     "json_name": "dinner_list",
     "word_list": [
-        "\uc9dc\uc7a5\uba74",
-        "\uc9ec\ubf55",
-        "\ud0d5\uc218\uc721",
-        "\ubcf6\uc74c\ubc25",
-        "\ub77c\uba74",
-        "\ub9c8\ub77c\ud0d5"
+        "짜장면",
+        "짬뽕",
+        "탕수육",
+        "볶음밥",
+        "라면",
+        "마라탕"
+    ],
+    "league_champions_dict": {
+        "가렌": {
+            "image": "https://w.namu.la/s/c8705fcfa3b9d09ed94b66c4c6182ecb706bdbfaea7080e995b77997c847d860b985d359ccf02e64314b5e5d5bed55483472fa52433084461af790d637dd747fad78b27e3d337ea92068e3e6c3e70bddea8da809f0657beed73dd63b47bdd53f",
+            "eng name": "Garen"
+        },
+        "갈리오": {
+            "image": "https://ww.namu.la/s/e72af4b4ba2eae24ff3465757d2bca7506091455925ac1e19148f06f48564f262c55ebb2ca6c8297cb5ccc8a5fc077e98f00f7a05252ba142451ce1cf920fa711b4a882dfb52d8d3bf1b692481fe96f52818f3c3e7f965edcf1a38ad5eb49221",
+            "eng name": "Galio"
+        },
+        "갱플랭크": {
+            "image": "https://ww.namu.la/s/ca0fcaff81ecc0ebdb83d1152ff31634760ae11b41ee8f4d45ddc8b4b77bc43e6fbe5ea0361bbad10fc194e03cf605f7f4fc60d8a18a550640612b1b7dc8a5da143a76e1f399e79aa801695dbb50faa84ca0fb254d41fc4ac1cc333a64aa792b",
+            "eng name": "Gangplank"
+        },
+        "그라가스": {
+            "image": "https://ww.namu.la/s/3bef186c7412ee885a164a3c5928d0e4aa3ab57d9ebdf4d7a9ba87090cc5c6f9d0a91367cce6d228a106b4090fa8ab9e9ed977a9ed936734bea98bd0802f805f1dd10688dceefdd289b878013217b544820c9bfa6487705dac195208ec1c9dd7",
+            "eng name": "Gragas"
+        },
+        "그레이브즈": {
+            "image": "https://ww.namu.la/s/b6ab0480594d2cfdefb7214e996786e2ee009bc2bb82b2d1ccdebf2b589df238644d4f23d06ae89bcfd2b1aa48c02816c0ed1c9e70315f5f89fecd14af431362b0686384f4a20aa1a10870d793734b13aad1c0c70ede4a019adc12b7d6b189b8",
+            "eng name": "Graves"
+        },
+        "나르": {
+            "image": "https://w.namu.la/s/bd0baa4ba146dc7644e31c2107bf8e94f22c264e3c80ec4402949e0382ca219e48c22fb40027c37e8d1d51d5166e19f6f4f83a701dd462354eccb5f2d5859996a527405473e2acc2d0e4cd238bbc5f70630189496f7f475922658d10387ccda6",
+            "eng name": "Gnar"
+        },
+        "나미": {
+            "image": "https://ww.namu.la/s/78361035442ea7fb69870b6ae180e0d6b79a5eb0c43f46b1e73dda562bffcf3b4cdea8c9e5ad8fa1335f26f912b344ccb4d426f5d3b6e7803e5350fdcd36a646604be35449dc3b1a5c8bdfb8c7fa4e3f35f4a99c0ae110cbb2cc13e055a8ac9d",
+            "eng name": "Nami"
+        },
+        "나서스": {
+            "image": "https://w.namu.la/s/b3bf6ac22655869988a92ee81f164d06c84a1397804f7b9fe5dbaf4476934a101581bf2a0081d79adad61cd9d32639c77ca6d215172ff574e7d2b776a8ca53a1f8b727fbe5a758e18a1e825647ab3ede992505905f60273a37c4f9cd3af23c23",
+            "eng name": "Nasus"
+        },
+        "노틸러스": {
+            "image": "https://w.namu.la/s/ad7cc2b49622249ff698842fbc7e157a8e29f92748bf856c82a64644e3c662c4944b30a9daf603680f02f931245aa014f83d8bec4a324b3001b700e08005f9695092465f9b4a9478ebcdb1ecb73a70c1253f02d00c7b1da1c08db8ddcff7547c",
+            "eng name": "Nautilus"
+        },
+        "녹턴": {
+            "image": "https://w.namu.la/s/17aa734bf6f1962867d70395f3f8f455fe094487383bd7f6b2e0ee8c882d4105d243e7439162d984d8d65b1128259dd54b09c416154be4a21d49746b562aee49e7c2baa1603bc89c0ee6bdcceb6062fa5f40fcf118fb1f8f473ae8dbb4408ed8",
+            "eng name": "Nocuturne"
+        },
+        "누누와 월럼프": {
+            "image": "https://w.namu.la/s/123af69df361036793d8a3ebe6f2b46e0581e6eba5436586afa8ecb48a1745285e1d4c5e17e7feda792a3e5533ad71fd3f0bc2b460320998b8f954c7554bba863732ebb1ca4d64c80be0f0c76e4a411b6adee67fcc6e516f6b8afdec862528d7",
+            "eng name": "Nunu"
+        },
+        "니달리": {
+            "image": "https://w.namu.la/s/021cb63231d9919d20cc61db924210fa329c8798d1dbf1d68503bab8e4fb6feb90f52e31d6e805494334cac4d22f02f9a5a460829654375dfbee31537e6baaefcf2145857f702a0fde3e527beed6b6e40bdb899c55baf6ed54e49ab652217cec",
+            "eng name": "Nidalee"
+        },
+        "니코": {
+            "image": "https://ww.namu.la/s/8d556eb8e320bd4f0cb57076071d5807a47cb2d58f3deac56b6c7ef75488cb722c7041829dad9d89913453e7ed61e1966e8bcf47ae6b95fc9cb167e953098501941125eb2d277950a872f99166af37deacc349962e7ac81dc0eed2956d96a752",
+            "eng name": "Neeko"
+        },
+        "다리우스": {
+            "image": "https://w.namu.la/s/ed62230b44c115690b008e6fa788cb49c248464130099eb14866e7f742943fb22a10d0b988c66dade66eaebfe6057b47443469d3849154f73dd4fbed233ef57f298f49b556ee9b49a6a1891228035a9f80f8fa0977941b49f1f040be7cd1dda0",
+            "eng name": "Darius"
+        },
+        "다이애나": {
+            "image": "https://ww.namu.la/s/221fe77c73203b35bb670dfa1c3866f552a4e6bdd3e1a8af4884d6fc40d0ef5a97b348a21df63787756732716898c3f8604b7a6a20677d6282aaf5278f06913079f314c8a01ffd70c3747f23c774725248711de3081dbf8487820ab2d0c6dc36",
+            "eng name": "Diana"
+        },
+        "드레이븐": {
+            "image": "https://ww.namu.la/s/291135a77411d1e015527361676f366f9ab6a03fe4a5263cb8b94e4c076c275e0e9302dbffe9b40e0e4292cb93b011814c6b429419f222ced507946f86e8365e322c11d5fdfe3b3fdc7ed73e3cb6a5b4ad7acc877c866c1caa895a42db948e0c",
+            "eng name": "Draven"
+        },
+        "라이즈": {
+            "image": "https://w.namu.la/s/23eb4f9629fa0d95ea7bfcf695bd2bd1cb3e5dd0038c3f98c5853add66f18b6e5c7475b4f9c5329bd5724b2a4f5d47bf49b19110feaf0a8f10904afedbb192bbfa735c1bbc09930643526d8a1c6576e100e120c5938b9a2c735cfc75db2e3cca",
+            "eng name": "Ryze"
+        },
+        "라칸": {
+            "image": "https://ww.namu.la/s/ba3771296998924a5ca8769144d49842ae170e258670c07f4c23fbbb224591bc08d7e8fab0cee4e3eb94071df7dbb5435fde13a45b483eb8899e9cab4035d771fc55a87bd46ce8c1118cefe0e37117bb0bba34f88e7e1d2aaed344a78a0e55dc",
+            "eng name": "Rakan"
+        },
+        "람머스": {
+            "image": "https://ww.namu.la/s/55f3b92173dd91282f250e0e6697692e11de09a9ae6a740e86739574b6edb78f185aab6cac3860668b2f96fc14dd04f14f807a93c5b67a48e8f0c3e89e1b0b888217eaf17ce16c8446f781f312bdcbe8bce4a0e335dcb1886fe34a94c599911c",
+            "eng name": "Rammus"
+        },
+        "럭스": {
+            "image": "https://w.namu.la/s/a304e74a82fb5f7dcdac2316a5bc104b0752c80414295439d2b9eb8bb591e874655a2d64235dc41b8a31cc8aba6a6a2e0793a654d9e67860329f4851dcae7feef5c4f18ec239259f756fcae2a49bbf67783873b901043b897ba9b3d46bab265f",
+            "eng name": "Lux"
+        },
+        "럼블": {
+            "image": "https://w.namu.la/s/84277c07ba44a87ba19370bc29a25a2851233d82be0363712a4a7abcd5b7af95fb615600abfc7567c7c6794c56b73622135013d1d9ca30e3caf82e1f218ef23922f566231de71d1e3f992f491702bc1b63185992259bfea5c03e755db4bb4dbc",
+            "eng name": "Rumble"
+        },
+        "레넥톤": {
+            "image": "https://w.namu.la/s/6d322483ad672bc9ab057be032e25ffc913070b7a7c988a8255f09b080619656fe62ef390b88a3fb9daf2d99b80778ba33b8d7d53185a5b29a03416bbd638ba7f261c1eeed7d08d54b5364d8cae0004503386b241c78de2ea2540e8e2912a010",
+            "eng name": "Renekton"
+        },
+        "레오나": {
+            "image": "https://w.namu.la/s/1b8212e8c68ff3eab501a258ecdb3532d477bda5b99b37d6ede08f3ba3887a12a7bd86b2816b02f6d2c5e251c308b97a8af3318e87d4ee2130c0c1f6f4bd833ae067607ced496c19b96c771062c7cc9271a70e36caaefa1d1321a9c3137ee1c2",
+            "eng name": "Leona"
+        },
+        "렉사이": {
+            "image": "https://w.namu.la/s/dee9b3219da37ea896daa3c081b41b40af77f1bb98f695d0815a27808bd28ebfd27bc68f675170c52c1ca35c31ff85324af1adcc32095518f9cecf42072c3257452a64599522b8b8ea1deeebbd44aa901b688705b50d3f26158a83af0f11dfdc",
+            "eng name": "RekSai"
+        },
+        "렝가": {
+            "image": "https://ww.namu.la/s/b14ca4643e5782044ea12cca1bf8b52f0529fb0e34c56ebf0dfdb12662a0bb6156dc6baf920772221808662a9ca6f04b33a12c24086c8020112976fbefb0062a687dde15994610b1abeebeab605de8d9a63d55a27ef2e3b1bc8ebaab74c5b142",
+            "eng name": "Rengar"
+        },
+        "루시안": {
+            "image": "https://ww.namu.la/s/a93117b03582ac98fc8331ff0670f82b81288f65e18b60a033d6009dc1ced33aabe1afa251bb6b434826123d6438c6dcd0843ec54070f2cd9fb5714a2de275f94d149412e9571a212ddd4ed57e83d7a6d4350a18a791776f1ee74da50f03e7d6",
+            "eng name": "Lucian"
+        },
+        "룰루": {
+            "image": "https://w.namu.la/s/37bf4a4737c059c67242bc98f065b3990facf03f262e996a32508a43d05350ce15a5b061df84991f1f4b591a39ab72daedb870c75e7f7a958e566535eb4f82af44715c4775044e718e57e8b16339abd873b86ccaba4bc039bed12e00dcfa7bd3",
+            "eng name": "Lulu"
+        },
+        "르블랑": {
+            "image": "https://ww.namu.la/s/9dd5643ba9a63d9ec8d735cb9d64abf3415e921ba0bb2286e5b082bb82e1cadb8f63c7e925874a2d195195f7240412663cc6c4bce7b3b7f97fbeb2579a465e0dda95ebb2a6c7d99595c20e59203a252c5d94c4c5d704d0b2bb0fa005a2adc472",
+            "eng name": "LeBlanc"
+        },
+        "리 신": {
+            "image": "https://ww.namu.la/s/96d63f1c7aae8d3362cc73bc71d8e61e2fca89729828fe754218a102adf3800230f3fa5b3df6a04d4e102db04655be4d0f2eb2975cc1e9aec7529af58aeb58e464b282bf24c5f736331342b0bb5ff4c9dda80f7f888ee0730434a03606bbc693",
+            "eng name": "LeeSin"
+        },
+        "리븐": {
+            "image": "https://w.namu.la/s/8a2956d7e42ad0877405528247d3f24d882534683670121c1880d59a441e7d54216fa7fa17cb7a655a0076669883097d58ca41e2b5aa2a98d700e4313acd7096a7b204a13e19afcc131a564841a6eab083319b2116870798d9e5d95769e7939d",
+            "eng name": "Riven"
+        },
+        "리산드라": {
+            "image": "https://w.namu.la/s/1a5cd034f6f22dfb0f008beec018162cba2f38d315b584e1a98f98444f6fc881caa088bfa563ea2579070125871aa9c37c8e8acba9fe583c21ad9f6717caa68c296ba81fd8d2a63abdf1546c9da94a3cf8e57f05bb0b4ed2b7cf3c8119336f4c",
+            "eng name": "Lissandra"
+        },
+        "마스터 이": {
+            "image": "https://w.namu.la/s/c87c336e7414e9e754f23523cfb51bf13000b33e967b362c64cf158c7998705b937e4fc80092f02bc4013a7f3558996967626f3330bec0f1a36d1df84f84246d849fd71c51c8ab218a09a2ca351a32bff4f0528e7dd22c6c3c17b34d6d1a088c",
+            "eng name": "MasterYi"
+        },
+        "마오카이": {
+            "image": "https://w.namu.la/s/1df88690dc2bac10e4a072556bad111b00ce3d49eaa881f5b5af8218b2d65010b0d95f61cf45444dc5091b4fd3713cb9bf1427e16194e87f61beb21a1f88cc8fccd4b687c0c86fe57b6dddaf4c70fe98afc31193f937b80c5902ce263719fe88",
+            "eng name": "Maokai"
+        },
+        "말자하": {
+            "image": "https://ww.namu.la/s/3a477e54e33817d739f8e56d40c4704057bf898615f3944a7e1717f175adb101f9497111f9f6c2f94610a562646300256dbbe210e46f3c4aefaa2d0b66b35558314e02475e40aab2c2981d592d666df225cd8592527c95800bbcce71663acf6f",
+            "eng name": "Malzahar"
+        },
+        "말파이트": {
+            "image": "https://ww.namu.la/s/4f46dcd302d7563a2b5675e71246966e416e81d1c22e9d82b77299deeb01c3b011ce429ec1233d55fb16d08640cf4e0e4f5919b0f470bda422f0e9a9f119e41bcc69be9c9138a22cf5f8bc49b933ef2547f0a76ba459d5b5582d260502584611",
+            "eng name": "Malphite"
+        },
+        "모데카이저": {
+            "image": "https://w.namu.la/s/552b3a2799da1fa2e9c7c15b9dedd8ea75d5fdebab94fc6bd2d5afa1babc24f234bd9af19adae0b944c216316db8ff5f887d7e5baf3afc6f878733e37e8d3b274886e1d4ea0486849ab943fa441f70c0f2f0b10745c11d58fb2de9970b858484",
+            "eng name": "Mordekaiser"
+        },
+        "모르가나": {
+            "image": "https://ww.namu.la/s/27fdea5ef37756a04625bce2dbd5b962ba26780475e7b7412f1a1d8d44573c85fa395f9f52d12dab9f9bbbc4c54e187e02dcf638706ab1e36871b2b8c6bb96a41ddb2723e8383b49d83924e66d6da792f42f40ab2d73347c5909eff825f2d9b9",
+            "eng name": "Morgana"
+        },
+        "문도 박사": {
+            "image": "https://ww.namu.la/s/a926ad5c82fe15e5bc7bd954ee22fe2fc1707e3bead9053a2b1476330af61e3b7642920c9d18daa8500af0f86720629ed78cba4859b32274bc9e8d54ea9cc965a4a6af92c5747a26364ce0a682f22542bb06a7a5523d0074814a39260ac86629",
+            "eng name": "DrMundo"
+        },
+        "미스포츈": {
+            "image": "https://ww.namu.la/s/96382097aadf933d45b4441665b4dda8c63dd2e5e3b0613c6ec7863752322afe242a9747ccd00865df45e42c842a5b7a334bb5c2d6f196b58f94e4abc6d457805cdfd97ab2cf653f803fd6bc341aa711f1377781a9e13e1babae030065ff8f2b",
+            "eng name": "MissFortune"
+        },
+        "바드": {
+            "image": "https://ww.namu.la/s/03bcde731b9bee44fc62d6ab29fff3ba3151d0b102764293c15a62c6a6ca974d799e4097bcefc5afdbfc4eb091a29319da1942fe6f46430cedcf9efc81d02bab0ed4576e1819ad9dfdc20ccb66be70d38188f9de481a662e58fcd7213f422c8e",
+            "eng name": "Bard"
+        },
+        "바루스": {
+            "image": "https://ww.namu.la/s/6e1a1bf6c17fcd6af9703e7446a585571db08de1965acc3d9e9c049fb2b256b89ff715773284f7cc33082fee0819f28212171819463661aa5c93d013e548a959891a6af4476948db0ea2a5a55f4efe38710532b55c9b32084e76fc7467fc0627",
+            "eng name": "Varus"
+        },
+        "바이": {
+            "image": "https://w.namu.la/s/6093190c39035b7f3617555ab0d45c075d06ee1995d25795f0783feda3ca9dabf59fd27c5529d564412f3489e6edc3273799f9119df93efdf30f8bd28ac50f2a5b8e4a3d200ed945fc9d71ad9f4b061faf4e7762dd4e2db8814d8ec59fcf98a2",
+            "eng name": "Vi"
+        },
+        "베이가": {
+            "image": "https://w.namu.la/s/fe38010eb08a47efd50d0c42110b438a49ee0584e681067eb708c62cbf29e0ddef77b43e482a5bfbf2015ff95d8d8415f7fa82f04a1d43d4ef6cab573792c52c861c296fe94774232cca5a20584bd72482a3df919d5d53071e29502b359ec4ce",
+            "eng name": "Veigar"
+        },
+        "베인": {
+            "image": "https://ww.namu.la/s/16c4da69b6f230e08bd88829d31cc686af291d3feb0d2dd69d5731f58fa8128abf8536b75a76e92c5df54dc3594a3e398139e2afdab37acd3b407876413cfc49de6b5f8df92b72ec6c70cddd26bd5412a52be57c875256774c2fb5df1feb5f05",
+            "eng name": "Vayne"
+        },
+        "벨코즈": {
+            "image": "https://w.namu.la/s/65fee87182fae7827458f41e30069f00f25380d19bb5ac93b20d381cdcd66760307cfb5c97bcb9c640c02eb613f13bbbd05a93fc521207b83c3f59e1adeabaedf3abe1e2eab4b0595f33f6eb099d0b77c5058234f3dda6f6f10bcc252b9da284",
+            "eng name": "Velkoz"
+        },
+        "볼리베어": {
+            "image": "https://ww.namu.la/s/ad6e4a3030cbd5347083fe9f337f58ac88a3c749edd4328f76b73f73f297deccea3a058687c78747bb9ff99cee0e80b7531614db24b55ec43bc4e0560fd4af4c6eea359404c70698540c8da746e64461e15520971f72e16a87888a4a999693da",
+            "eng name": "Volibear"
+        },
+        "브라움": {
+            "image": "https://w.namu.la/s/c525c7d90bca545f9739a068d4180b684a83726c3bd43784fa929c64dab40d3c5ccdceee8175170cbb1a3fd74718ba7db9d09132d05f1d5b3177caaceac5415ddabbd42ba87fefe38f6566ebeb215a02c7b2c45e46a2c4fddfa48ba6772fcb34",
+            "eng name": "Braum"
+        },
+        "브랜드": {
+            "image": "https://ww.namu.la/s/426ef181caa85eacaa10031835fdd6a4d49ac1b67fde89ea6e9a3302c82999c14330ac2ac9cff8860a82c850e9af013caf028be9bf9e3fab81dab732fd13cfa66d4e9d1286a1da19d1be4e101abb2a9ecad57dc269444e1f2e48a87789f087f9",
+            "eng name": "Brand"
+        },
+        "블라디미르": {
+            "image": "https://w.namu.la/s/df7b6a6e2571ab1c83226110e153c5d96c5cc87c0ea595ea437f098f84705a7a7ef43f9729487f6ebe5f0c25235646d7e8afa047d03a1bdc4aba380a86bd708f8e73e5de5e2f500dc94ccfd9152899027e3082a3aeeee5f558902a4d58fef98e",
+            "eng name": "Vladimir"
+        },
+        "블리츠크랭크": {
+            "image": "https://ww.namu.la/s/58c6f71295fb58debdb9af56a860cfc4245df924c40009e062545562da6de364e43a453bb8c9c819dc234b5ed9e46d38e4979473c5d81499180856f46b0fde380147261062989ab187fccdb54ed24ace7b64aad80451dbac054097958f2744de",
+            "eng name": "Blitzcrank"
+        },
+        "빅토르": {
+            "image": "https://w.namu.la/s/18b9bf21986a4cda1de0e6884edf90cd476775b417806e819f14752daeac3b9b31261f48363307fa7ecea2cecd99147f7088c3bdfd8ccf4ad3ecbff2d3ccc6f5e9b5ed5b2d7e6b911b7b693a5fbe0de194a8416cc88e00c8e9914df189d4effc",
+            "eng name": "Viktor"
+        },
+        "뽀삐": {
+            "image": "https://ww.namu.la/s/13f2ed98770ff916f4070f4e79a9134ecc3a27d0b09ddfa686eb4cebf5c42f16080ee6ca2ff99013390a0d7e5d63aae1caec83180d93c78610b3f7d30cdddc5a0a725a73d1a1bb98e238a2de7e5767eeee084d4633e32ff987b5fd04166d25a2",
+            "eng name": "Poppy"
+        },
+        "사이온": {
+            "image": "https://ww.namu.la/s/e4b7d0a5e5db4b5dfa51c13b5bc9eaa43479c544747e3b855d77d013c7298168c4fa12d4bb18127fb081068448cb620d88de724dd3629dca519f9f784d27a2f4b8919c089871de3919ba96b43cde994a2718f710a831849c833d189407bc6dbf",
+            "eng name": "Sion"
+        },
+        "사일러스": {
+            "image": "https://ww.namu.la/s/e9552a73ad77b7351427654c4d6de48a94409e48b42d0af0ff7919a6d8050614ec0c5cd9db1ad639c9d23be178a7d7b686a76fd33031672521398c2a8308e7befe7d2fc620d52f57e08b608a74af6ec644902baa9eed0365cae6d5fc628d49ca",
+            "eng name": "Sylas"
+        },
+        "샤코": {
+            "image": "https://w.namu.la/s/73f0d31b04ab8b958c554d298d761ff6ec2517f37c17cd5829746d4f25018d5f5c13f1b0f9aba635721060e18de090bc6ab9cd00e4d426db7ea6ca450be325ebcc151920ff4b024c75f90a8ef98faddb1ec3e5b59759520fcde42455c7d2fe26",
+            "eng name": "Shaco"
+        },
+        "세나": {
+            "image": "https://ww.namu.la/s/9e508a8630326a18c6f05c0883e07a18d4fedcbbe0c5dd2c4e47719f3a31b2013af03c104491f359ece6478f38fc80b159399d71899df696f313aa003c3547b356d7db298bb506c3cef119865d3a0741d61944cdd7ffbb9a98a002a86e20dfbe",
+            "eng name": "Senna"
+        },
+        "세주아니": {
+            "image": "https://w.namu.la/s/1f5b65b9137d18ccf84a1bb6c8a478665e76c0dbec016e48350ff2a2ba5f02563def71c8adf7f3ea3bdd396d264fe9c42ee8c6d189752464d20ebc153c535cce38544c0a94fe3672b9db761dfd9ad21c32a4efc6f4cf6631dc41ac16afed5f26",
+            "eng name": "Sejuani"
+        },
+        "세트": {
+            "image": "https://w.namu.la/s/ef3a6d944851f6a2f145c62aa19f6df88c81923d464f35535f383c18b7ba058e6b50e24783da8cf04af2bcfecfe3c93a0866edf3cb1dbed9c4b1d4305accfbcc193e0776ccbdc6ca73d3a81daba49b8256afed57a4480501546ead2b0b70da89",
+            "eng name": "Sett"
+        },
+        "소나": {
+            "image": "https://ww.namu.la/s/952ee92bcf63e02cf4b5caee58d284ba9bd1845fdcd38f49680f229167e48252ac00556dbd831de74a8a01ae1d8bba6da2946747ad17d1421883c25eafc002e0eb1dfd2fb71c699212ba56374b1ff2c5202a0bfbc6a92b18f0c347fdefbec76b",
+            "eng name": "Sona"
+        },
+        "소라카": {
+            "image": "https://ww.namu.la/s/4d28bdd914057b60b58c7ccb9d9b545db7d35f34cf7b7ee47b0fa1794972d8d0cc6c2a8c11b7cf0c34615dd5a5f2ed7e7f7554c7781634417873069283e9386b6b640cd8a45b219f854e918635cb571c3fa13dfef93e3572634a1de2b1a239c0",
+            "eng name": "Soraka"
+        },
+        "쉔": {
+            "image": "https://w.namu.la/s/f3d0abeab94160b85eed7770a0693aba26c501c2f6d4d481034f22ab257c93e5a29985fe94e2c7ef91146b394190c66d77cbc0a9b302025b88631de0c206d15cb8ecaf8933de582c00a2528e2cede347c608a6e6c89a15f29ac62762be98fc08",
+            "eng name": "Shen"
+        },
+        "쉬바나": {
+            "image": "https://w.namu.la/s/983282d455980c33349bddcee4c4cfecaac313fb8ba0310503211064095e39be2b261064d9a0e06d5d266140df025ed6c8896d2598f1fb94a58b041b1e1b447b07ecfa5f7be7bf30c0d1fe985f7069626c777cb00f8579401283aa86a853bb27",
+            "eng name": "Shyvana"
+        },
+        "스웨인": {
+            "image": "https://ww.namu.la/s/5fc66aabb8dea3e474c4dd2e2f0aeae11b8eccc69e2cc3e0c7c68a078dd695089db6b7fec377ce1c332f39fcb9d14769486aeec7f9fb1d622f45e980a1a21eea12b339d7eaf095d98f0d4b8fd98f54affb2cf87c5010d5ff145923b3d3677e1a",
+            "eng name": "Swain"
+        },
+        "스카너": {
+            "image": "https://ww.namu.la/s/b60c39c6b81de44dbe02d8feb4f62c2d5c7bc055daae6e3243485f6d9853e5f2fb76c7cd42a0a73bb8f8bd09a3c23d0260e367d61f956655224908709576665e35b713d676ed240c3174023e5659c1010422db8603df46aabf42b27b210bd3d2",
+            "eng name": "Skarner"
+        },
+        "시비르": {
+            "image": "https://w.namu.la/s/91c9f33813e77a1ace051a61452d30c7b472c122e176f9dcf5b8436ca973aec8a253126bb276c618a540c52fa756597b844d7aa98ca08ebb84352a024aa3e744a9c81e7cd9ab407b6abef0140097134823cc75845a85b3ff1dc1e661518ab74e",
+            "eng name": "Sivir"
+        },
+        "신 짜오": {
+            "image": "https://ww.namu.la/s/3c59448e3ef2cb87353d437bd71bf3fc3e3d68d913618c0103ac1af6b3ffcf5284d999d2f57eb6a5e254155b7450c811309ce60cf7d94263f5df1da294cae11beea685f599410371f0fed78e725de9449732a13da442acf60fe203a066ebccac",
+            "eng name": "XinZhao"
+        },
+        "신드라": {
+            "image": "https://w.namu.la/s/9d01ee4f0b0ce7af87ff03cc11f553d908852c31a17c31b6e46aafd5a93e4c24e94710d33a487b06be6e8768662beb2b8eff8e66482df93ce74d69b689838ec6008465fd3b4d5c96d2ce2f5ce386a7ce1f354d8a48d26341d4c29dc20f4f778d",
+            "eng name": "Syndra"
+        },
+        "신지드": {
+            "image": "https://ww.namu.la/s/f369782dc970f181e631b3034aafd7a0c30d043c333bf6e0ae635607fe80b49059f6ad0aa0ade0f8ad8c5c7dcb357211b01a9cc24d76a55e4355b0f4d13fabd710745b0c7620f4b7182d31457d161644b1625759ab522138552780fb7fc0454e",
+            "eng name": "Singed"
+        },
+        "쓰레쉬": {
+            "image": "https://w.namu.la/s/8ff7308caede2ca8f102dad842590d02263c255c14dc1202615e907dbbb65b87fda07702faf7889726470fde611b69934ecbd1e3dd264dd44248108d125d6ead94137a703a99bf5c008a63d8a49b332e208cb76082c4768fc8019a42e98144a0",
+            "eng name": "Thresh"
+        },
+        "아리": {
+            "image": "https://w.namu.la/s/84273ed7ba1c1279f51b40b5e521e464ca4270b9f47ac0115f86f74b4fc37ae350dd13d391e8ba1dbc461ba4fdd3a634506f9f6089d01bd43cc3ea0dc0798b1b5ecdd2d0242336c4477e9eef9d1121748106933386d5ea17ee677453937e0c6e",
+            "eng name": "Ahri"
+        },
+        "아무무": {
+            "image": "https://w.namu.la/s/69eab74e45eaa7e167dda0c18f9989817b4c84527483dd762b460ada28ad823d52d36754fd2580a4d71dc37f3c45ff029ac4c9107f1bf055df2bbd6074d41e8e6b9da96fb4ecf47d57199430413d2ac0b430981f85cde51502b55fcad82b1d6e",
+            "eng name": "Amumu"
+        },
+        "아우렐리온 솔": {
+            "image": "https://ww.namu.la/s/7a38ea2d9032bebd45eff77ab48115da49e003e84852e12612aa8f517fb1811d313b391b22ddfd7a5b2f34ad8db7b95e1897f46b3361c33bea702e78326dda3db8a48d398cdacf667a005755b6744ab80e5e93e2f2f4054fcbd5b53b9d2dfa69",
+            "eng name": "AurelionSol"
+        },
+        "아이번": {
+            "image": "https://w.namu.la/s/bf2e6442253a9beed5cebf6afb042e567d8bda83518aa64b8d748f947b9a9232e898d3e2bfad7f634d5355a972e6bc33352d9401a2f319ab6b42adbc49dfb035f637077f6834b00009b271bff5ec80e271412db55cff5f4e9c49dbc0dfc63774",
+            "eng name": "Ivern"
+        },
+        "아지르": {
+            "image": "https://ww.namu.la/s/8a32b9f96e116936a57ca6c12bced3e815f3e1eaa9a839694401fd14f3c677ac6e8bde9c61bd77ad6fc659b8a6546802048a6c3fc075813bb48ad681b727a5810228e2ac26f3a8330556bde51d5865075b8d388b13912f667f8f2d96a610c48e",
+            "eng name": "Azir"
+        },
+        "아칼리": {
+            "image": "https://w.namu.la/s/7db388e7bcb31cb35d1646c2cf7e950973894094243f108707c0162ff38968026a13e5b3ce6e336e77257073f6e5cde6af8841eafcb7d0a853f3dd35d6d4006f7dc53b49eb9c1577c11e8bf40d9252c31d3076bd5562d386d5eef912016ead4e",
+            "eng name": "Akali"
+        },
+        "아트록스": {
+            "image": "https://ww.namu.la/s/bfbd09eef47afe9ef38fde89605900c2c0118dc50dcec84f0396e10f116929fdebd4a4c8eb86cfdafa95a1bd97cd0d3967c5c19828a4923849ed7dee943c21fb7c21c8dfa657ad0a089545b5efb3ef56d934b4477e2552d5fcef67ca02a999d7",
+            "eng name": "Aatrox"
+        },
+        "아펠리오스": {
+            "image": "https://w.namu.la/s/bf5e479546a2e49d832035b2eaa3ad5e00a1a4233b196ad82b6af2c864cccfa0e2bda93a620f73f44e1bd4827c420c690f9d425a68a80ddd8a026386f1ba78ab44177243b0de9f07ecf57bc7d2347dfde29077e3f03130bdc936a3877feeee22",
+            "eng name": "Aphelios"
+        },
+        "알리스타": {
+            "image": "https://ww.namu.la/s/07aefa55957f854649ce87d828444a3354b82654d6f8b4adbd9f8adf7ac758469b8fe66e9b19249e959312821d9bbe61b10e586c28e88c78a65bb71bafc89602b21f622a6197245a18dec61fa1a447996ce3d783136ebce41f8336e8088d0751",
+            "eng name": "Alistar"
+        },
+        "애니": {
+            "image": "https://ww.namu.la/s/7d41cf52bc54470192c04b15529f603ae06da447f42f89adb73fb7c24d0837f73452900d2069291e29281d0515fa005168355e67578b208c5d5360bce0dc9a36970f098d60c0a7916a7a10c6b1fd21439dcefe1cafefe3451867704300582afa",
+            "eng name": "Annie"
+        },
+        "애니비아": {
+            "image": "https://ww.namu.la/s/965ce6849bcfffef744241504af4d6ac4908156dd42f3dab884fdb635c0821978458f65d7f182efcf9d646b1e911721e5105c9aaa53dc92318762c50bddc5228591a73797bb75647ea30451085c44ee8e5024c20e2b04d799554b79689d5902f",
+            "eng name": "Anivia"
+        },
+        "애쉬": {
+            "image": "https://ww.namu.la/s/64479d5027990a61ddc1bb73cbedac8aec92620dd4239b4a9a788af83394263c435059a7ba3ebd747ad51975fb8e0c665d8ce0e77791d87230e37a2c2023b4456bc0c019a36986d7aee392479dd23cdade9b7db49344e0c7146c28cb076fad68",
+            "eng name": "Ashe"
+        },
+        "야스오": {
+            "image": "https://w.namu.la/s/e9a5b377ac4f97cc5e0266bd1f1f175b568b88d42e4db27e33769fed56b5af8cba920681aa2c30834640c18c0be71019fcd5a1dadee020494af27f888612b9319f919b92216e1500c93f4362b433db2a34547dc965a5e99615af6d6bffa51809",
+            "eng name": "Yasuo"
+        },
+        "에코": {
+            "image": "https://w.namu.la/s/bd195ee7daff2b2b1562c0de8213b829c8bc7377537a1fe641d6e2cb7070d17d5b911321f189ad44c5100cd1186ce656c225887bee94be975730e9273d0446a412ba04ed05209341d7ff9269fc446d17300c5a7930433914a62e97bb22134e26",
+            "eng name": "Ekko"
+        },
+        "엘리스": {
+            "image": "https://w.namu.la/s/66c71754476c436b8e36fd38ce44c778157b20b3107fd380b5c4f3f58409690d369a36157ea5ebeb63d5523fd9234a51bb6c72a5f681ddb8f4699ea2b2efaa93c8047219880e5b1cd72056622a2adf3fa245a09c391f1f31183db87e281a5dca",
+            "eng name": "Elise"
+        },
+        "오공": {
+            "image": "https://w.namu.la/s/e78e64bc6162505c07ddfbb7ca14cb74fdab61e6dfe3496f3167cc37d7899e233b5d861a671974f965d0d6141da0cf387deefe3ba0d8efeb883369e06069a60fbf3b8293896b6dae01f860e8efd111362c2476cf06e058103abe4066308487a5",
+            "eng name": "Wukong"
+        },
+        "오른": {
+            "image": "https://ww.namu.la/s/45edde8a54ddc0fe1cb3fef40574385b65502859d9b825c71cbc81a4979b573ca71bf44c320cc02303e2382cb3733c9f52278ed412ec880652a4a0291aafb81865026ee1ee4d7e899e3ebeeca5ffc421212890c65694153015621a4b674902e2",
+            "eng name": "Ornn"
+        },
+        "오리아나": {
+            "image": "https://w.namu.la/s/ac75f092eb6ce175a353bb76955af4fa09cb30b05451ca6073458e25b523e8bc347ef5fd2563fe45169814b868211182d6069e83f7f9cef726725bcf0e1b1c7070ae5a4b6afab7a77927d4b1fec41d523c025ae13893a0c3041fe66d9c23f550",
+            "eng name": "Orianna"
+        },
+        "올라프": {
+            "image": "https://ww.namu.la/s/ad487ecc6ee71e6158e695299f33143e125240a9646ef73fbffb8b0bb2eaa9a1431ff95b1e39073e56814beeade5460fb9034a099868852badae358f8ead61e15e1226208589e95ea4b9217728cc8a806c07730a9a370ce4eb7657e49db60a80",
+            "eng name": "Olaf"
+        },
+        "요릭": {
+            "image": "https://w.namu.la/s/94662d9ba78495c3456e31c99137e3ebd5f4255222b3387cdd41786a31daa32d287ec1eb90e7eafaefc17e3771d5ceca724178be0bacff83f8c9f20775362f9c9d94f581a7f2b4581581546b68645c1c7a18d832eb04bfe5a6a06106e143c38d",
+            "eng name": "Yorick"
+        },
+        "우디르": {
+            "image": "https://w.namu.la/s/3890106f3845d6ca3e5e1ce9ce606dc741f4557377f943bac87a57aea33ef96cff9cd1672db91b924d9179a1e707c4ef020d3abbaeedd5166c635c070002c5725b9bfb49206f3df95ddb544b89fb131b4d075090e366ab9c28c34903ae0e98ba",
+            "eng name": "Udyr"
+        },
+        "우르곳": {
+            "image": "https://ww.namu.la/s/ef2b9d34abb6e6946c805147c9658b1b0eed77f4b43ee4d702bcd18d92300b71cca9d291fa078e4e3fbd84042c747904273d98f06198fe455ab3896aab5fc53cece1affa4731cc3f3e56ded6c12b20e9b52d94a126fd53e95fc474f2c477204e",
+            "eng name": "Urgot"
+        },
+        "워윅": {
+            "image": "https://ww.namu.la/s/6e6d754a61b14b2bd9e171c07a1876b4b8cc0b41aa4d7848c35b9d69f99356d959e4ea25ff90f85fd6693effb8312584cbf9e9f5316af5cc30642051a976a4ad49067b4f7d58ef5f848d04459b499f9b8397fce6ce834cb7a8eb5bf54b455d34",
+            "eng name": "Warwick"
+        },
+        "유미": {
+            "image": "https://w.namu.la/s/9cbb48da2cd403ec50cb15a51b822834aa39c596cbfac6d42914b397ce6c1d656ac4de5f880b136bf2623eb9921249d5c9c36e8544e2ca8c85e1df13064ce5a72ba79474127b44dd07abbd18ed5efb027a2c391b8910c8e56435ca6524212a26",
+            "eng name": "Yuumi"
+        },
+        "이렐리아": {
+            "image": "https://ww.namu.la/s/4ce0fa9ce0a30008e71b409dce89b5806641f22fabb07fc66f0768dd459f1c98c91d13e53f67fb19000134842dc5f5947fe385858951b4a3463ed21da708e1ec6957395a9702ded46ebcd9f44d21cc772c9153ddcb2f1077255b040edb8b5298",
+            "eng name": "Irelia"
+        },
+        "이블린": {
+            "image": "https://ww.namu.la/s/209c6d4ae853f770cb07aab687c5d5482349132ad945c2d573bc82b13649ea1ccb663e72e1a1587ce9a106dd23042ffbbef2b5505badf9cb9f7698989b5138510f306f1c3a9d31d0f054ecb8930c69da9e141fbb62b5eb2878f8c10f65c832d8",
+            "eng name": "Evelynn"
+        },
+        "이즈리얼": {
+            "image": "https://ww.namu.la/s/d27935251fec40ef37d9d7f05ef595c9e745c1850fe6e2bc19ba092be7ed492e607c2cadf91852d6ca57229529e0a9e8aed9074a58f6a116e690270bc0b3d70a9c8f56b134d5be4d21dda26581da32d5f75aab9bf4b17cfbaf3f4c1feae791a0",
+            "eng name": "Ezreal"
+        },
+        "일라오이": {
+            "image": "https://ww.namu.la/s/126f612cc87fe5c92d68d1b50da81453bb6d9899757e238b1b595dac4a33ecbedf270d7b2abc8d84b1b78e51e5a9a0d5ccd2a374efca439f27ad729628c290f0a58867a006c9ee7c988ee75c2efe0b1790a8653c867041b62fd4bdc1ea1604ac",
+            "eng name": "Illaoi"
+        },
+        "자르반 4세": {
+            "image": "https://ww.namu.la/s/3e3297caf0ebe48da96346073a2545fe5e2903e3ae9f945aa36850d6f29e8311bba5bb7ab725763b2a7cacd9e5e13344c478e434c50cef6df5033d0093d4ed71a48b20a7e8a057f273fc8334566873780266319efcd5c6ac6f55fd1a1ae01d77",
+            "eng name": "JarvanIV"
+        },
+        "자야": {
+            "image": "https://ww.namu.la/s/d538767435cce0d7fe1f7c8694c3273cb92766304c8a74f15c497c79e05a77b55f5782b40ba42967dbe790845cbc9a695eead9a87009c90f9d61be2b8ac097e2b4cc5acf75f8261dd0a032be0a909bbb411f991804d7af01b1c6e3d54c23a8d1",
+            "eng name": "Xayah"
+        },
+        "자이라": {
+            "image": "https://ww.namu.la/s/0d26d95ebf83ef06a8a0b89ebd5dc816bed61324c1491d4e0c65a760e57992e303bf2e7f2d99686f839ae8dbf7d06c6a15f810bfcaa6368c8314162fa8f142d77e3cf25dcd3cc9d11b31483f7c212125919232b09829c9b455decc6a50173eea",
+            "eng name": "Zyra"
+        },
+        "자크": {
+            "image": "https://w.namu.la/s/506450ad1185b97728040af7578ba6f8fa447b9954a6ae73109bbcfd811124f9b1835212892755f46f4f9cf54526c588a07d0749ece6dd62d0d351b1b1886ae960bfb96775523e0a4bf982e8d95754aa0253d648edc1df89a0f975358482f592",
+            "eng name": "Zac"
+        },
+        "잔나": {
+            "image": "https://ww.namu.la/s/f9db29f7707e95c4fb36b05fd4d28c6992e5dfc92b54858347b40ab199b0a74318efb2102e4e19ee8d113f9954552bc8bc038a5de74757b63d3fae70b0b40fbdc1e2e8b1d9bd80dd79cdbe934472f8a66984dd4b4075fa685d08f2d030c9c898",
+            "eng name": "Janna"
+        },
+        "잭스": {
+            "image": "https://w.namu.la/s/667cedf3dfdfeb572a7588031f766a44ca6b50e86095e7351502e0c7b9198a3fd32ed582f21c5cc839a6140f47aa2057f6a69f37cb34ffb11a6462c66b3d9005b2925cc11e88e93b90208a7a677662838a50112798283a780d2df5b386d8c7c1",
+            "eng name": "Jax"
+        },
+        "제드": {
+            "image": "https://w.namu.la/s/6104ff43ca5d787ed2d7e8f9f21516291e9abc02b1db3c775767d1b0279159585ba93fbb897dd172aff2ec141daac431838c0218fbbd4be5f1ffbc9e022f546a8f45eb0ee7c84b8b4a39e6a84b9c924c43112daa99830b0f258cca52bd22fb1b",
+            "eng name": "Zed"
+        },
+        "제라스": {
+            "image": "https://w.namu.la/s/eed9d7acf52e21f5fc2ebaaa42aba537e6d927c5c60e746a906d833a337235ab5869029a14be41fcfad72827350f234df7b724d2067f508a63dfbb0593c2893d5c0bfd9c668298e724ff8e2ee9eac1c3a368ea498e1ddb74e447bde018e2a7ce",
+            "eng name": "Xerath"
+        },
+        "제이스": {
+            "image": "https://w.namu.la/s/85db748727bc157d7d7c9ca949c4983157ed33dd1fde25f33ae3b3e494396a36b55468c13f0eb0c5ef2751e0ea9b1dfeebab36e964718c4246b0129b6c8ee575c83781a4a2bed1007bb3b8aab1101c976ab91268cb7c4059c519ae3998a1d31b",
+            "eng name": "Jayce"
+        },
+        "조이": {
+            "image": "https://w.namu.la/s/ff439ae6abdc06130d8488456c0c2f222f19759b68a35077940eef639bffd60542ee8b76983f8d8e71e744c9d974596e39ebc607dbdc2f50a66b7a8a1efca0ef390514d2cdab3c6b533a774001ff1b3e21409b7b07350659fa682cc8895f7fdf",
+            "eng name": "Zoe"
+        },
+        "직스": {
+            "image": "https://ww.namu.la/s/06804ddbc91067456b574395c483c96b774d907563b8861f6c84f7372db048418d530925d7cba3a24afb366f4a1ef7b2004f7977aa78562c3d38bec730b6dea31fb78388c2b79f7b98a72176b114932b97c5516efa4fe26ca5ffd5087bf55fe6",
+            "eng name": "Ziggs"
+        },
+        "진": {
+            "image": "https://ww.namu.la/s/633902dcb7792ac96b5c19594cf210f1dbff33718c031049cb6b3adc5ff49083ca9b4f5e615f1e9d5d568e0be15e5a4ac727b71656f872499ed2dd59eb9687c8fcb90b589deb1d688f43467fc4c9b7862136b10c58c3d0ed7cf15ed75ce4eb29",
+            "eng name": "Jhin"
+        },
+        "질리언": {
+            "image": "https://ww.namu.la/s/e2f2cb2350dd0c84c2e430fd83c1af13ada2e46d253bd221054eb29722b31a86d3bbb299d7694937c5c024f1dcf88744c7996ad3d92486baa2fa44453e6d34313991cc50f8ae8fa37255480fc8ff4eff6640387ce5e6fe4a3e84b4ebe5107f07",
+            "eng name": "Zilean"
+        },
+        "징크스": {
+            "image": "https://ww.namu.la/s/6bc39252b4cb53d005451cc9f6cc1a40bf3fe7c38ed7ae042d48b6c90744cdeebec70d7735f2d8e671ceb8682a0fcdd5f35e2d2c71f01c5832221d48754bd7fc9bbe585085e4e0928a0ea3335d378c705b566c8c5fe6e0c8bd26a5ba94a36280",
+            "eng name": "Jinx"
+        },
+        "초가스": {
+            "image": "https://w.namu.la/s/fdcd06d9843af477a5b98a9a85ff85f8238ae1ed9e1e6065748fa25cf4b95e6a24c1a006d8d0328db54f975942cccbf6b197300a7aab4d0af42e946c1c3f3b1007b0228a232542327fd45d4e85e3b940ffd315a88cdf67768cf1f7ce81d1b9c9",
+            "eng name": "ChoGath"
+        },
+        "카르마": {
+            "image": "https://w.namu.la/s/43f6fe8bd90d330cd8bd2021610cc593d921ba6a46f5e622c6090624dc8a0a6e2bf45e3f439876443c8248c421e7928a7f20f37191131c0905328477a1328fa5594b70bb8ba9d0e6d24dba09729f50c2b28344d8c5ce982d38302041afdc5a8c",
+            "eng name": "Karma"
+        },
+        "카밀": {
+            "image": "https://ww.namu.la/s/b37a280dd56eaf0e7896d2bd53d1c792ad56d73db2a565b8a3db9ff5aa0515eb587a5fae43ff5a199b308016a6256cf516025097274715a71c089961636a3d672109e7a27b59047936d4e3c14f5899f24b985ba971ed59a3e5da59aa19d87ce0",
+            "eng name": "Camille"
+        },
+        "카사딘": {
+            "image": "https://w.namu.la/s/e9d113e6926483aee800981e31aa551502aeabfe589d8dd667c8aa6884a33805b24ff7a384922092e19c380e77b367f93cdda19f21d92021d0d9c2688f63c79087459cf304a96a6470ef72148be8d81472e8ace7ea7169c3d203b128debe6bf7",
+            "eng name": "Kassadin"
+        },
+        "카서스": {
+            "image": "https://w.namu.la/s/21531726affc0ee4f4372a6d442de28be72077321a68b67fecb9093bcec09213eeabc1fe8574a507b1266112fc6448ea4b3af24f55942536e9e1fdfae7b7ec81ebabd995de10dd82ab3badedfe9d482bcdf2ec72100718464d029ab1e49a45d8",
+            "eng name": "Karthus"
+        },
+        "카시오페아": {
+            "image": "https://w.namu.la/s/5f9f5fec147835c44fa83f79b60483edf6ca0e7a750b96ebaa4c079881b9340a4cb452e55a75fbdfabe066f3a396b4c999690ff4a48f7694f399e6ff9e7d05277c5d6fc371fb21c89d6133793c588039cf9aa6f617d2bec4e1847be53beb9528",
+            "eng name": "Cassiopeia"
+        },
+        "카이사": {
+            "image": "https://ww.namu.la/s/7a01a91eb6ad6d45641ce14dd2a9be2f9ddc50d161b606f3cdb307b3ac146d4050bf037643ed99241a7446a67db9e5786c28a3d8d6aedcaba1e23b1d6301bb8037c1624d0b60ca2f8b6c729a173a718593a4dd3cba0c940715781782d62e59f9",
+            "eng name": "KaiSa"
+        },
+        "카직스": {
+            "image": "https://ww.namu.la/s/e6553a98be2fcd0fcfe5591925c853c46442efc2a64004a1e063939263eadfb8e4c99960473ea298e72fb3d5160f90754b0bd49e9087e0ab3e7ef81be9cdb87a49789105ad656b6d5133746d9124b2e064762c686a6763da45bbf169f5d7c86e",
+            "eng name": "KhaZix"
+        },
+        "카타리나": {
+            "image": "https://ww.namu.la/s/e734b1ee2a52b7f64b855eb42973c7025ea2e320f2a8a5744099eca90d7b35b8d092553f66fe8fb57abd0ad929d9f6c8367921a153a760dc0c51d47eaa13201de7533f5fc8c642fb990f5ddf0f9ad816541b39d20fede5c02c4982dee01ac3f4",
+            "eng name": "Katarina"
+        },
+        "칼리스타": {
+            "image": "https://ww.namu.la/s/998a2a5cc27b58a1957fff7c2950132298e49e86a395987b1e7b07bef18de8e59b8e5abe77cc701d772ead26024f398e990740bd17c7d82ab41b1ea2e4a8bd297658f5438c57308e8254357cf6442f95b734e612591179f2b64620df5da03630",
+            "eng name": "Kalista"
+        },
+        "케넨": {
+            "image": "https://ww.namu.la/s/684647f360281f17996a60e146eb7b4dbd9ccadc5414fda079881f47f7a04e470b7e4d4ea87bbf4f206689705cc892d5c34221809fcaa68708525c2b27c8e22a1500b395a53bc4e9be17e5593abaf00da75941fc152b2edb798d4e64f2fdadba",
+            "eng name": "Kennen"
+        },
+        "케이틀린": {
+            "image": "https://ww.namu.la/s/571a720656f9eb353f43c83b0b1c5100e3f400b6f91727f20ba4a72f2226d434e54b288c1e6a07e470c3a2c63dc2e4cdba6d551ac25d18ff9b5a3fb300f9cd12b236430a855bd3a1c321823142a48cf5b16262270a052bc3fec2026ee032c331",
+            "eng name": "Caitlyn"
+        },
+        "케인": {
+            "image": "https://ww.namu.la/s/c3dd8bc0f63d9c8d4a6b65921b633cc89ecd43699fe144c8d007155a75cf5996f434e30dbb607a0d9ed8ddf9437a8eb24a05149a4ff0dc69f8371d033aa4cf35a90a98ac8002e3d0ec01402eef25f0c57343c31ca2c4ceb918aa656e41fbea0c",
+            "eng name": "Kayn"
+        },
+        "케일": {
+            "image": "https://ww.namu.la/s/efc8289b0311907bd7a3fc74464858931c7661066a23f769a17f1098061307d5669a1b4e9e6a28cb4bb7e6bd8e62b2e89a29f7c92cc3ad2dd54580846d78c140dcbb8debec03ac4ae26590cad167732c6b62dbcf6665a129d04ce53867a8539c",
+            "eng name": "Kayle"
+        },
+        "코그모": {
+            "image": "https://w.namu.la/s/ff5cc3804236519e127f506cdb5dc045d2da325973b496fd313eb4869f533cef0fa0b9e238a5deb811f84f42507254e82c7f56352b317542178777a72495956ab6ac61f03dab86b5a83257edff7bf1836ec60ff758995d6a702529fd95aa1dd0",
+            "eng name": "CogMaw"
+        },
+        "코르키": {
+            "image": "https://ww.namu.la/s/9867c236ac00de3babcafc454af73e84ac65a09862a870856724bd38bd2e381c2045b05cf7eeed8e85ab5bbfbbbd785fd6a9d07297315d8aa3ec6ce1ee54c1cb2e3eabc6058b6473837d6612a0d2faeec7a5c91c34bdf20e559c54d27faad134",
+            "eng name": "Corki"
+        },
+        "퀸": {
+            "image": "https://w.namu.la/s/a796d83f9e6509a25e3f4b54d913a5162d60336be930db4d8280a192d0f821e761255f3fa28bbe05df6892ae7c3d4a840070cf1d6b812ee092cc13bfefd2a2b1ae448519b883cb13c519d18e87787a2d9c5f16815374c5dd0223587ed6e85c0c",
+            "eng name": "Quinn"
+        },
+        "클레드": {
+            "image": "https://ww.namu.la/s/8f87da17ee777b2b757f9d6cc54f54b3d86bda036b99380bf5170213d27b8ec3e753b4e167266f22cca75457d77884beec11f0f94d6013b52da28967910beb91bc0f3fa8adeaae8aeeca08ef8985449bc128713c9d094bca40294404e314489e",
+            "eng name": "Kled"
+        },
+        "키아나": {
+            "image": "https://ww.namu.la/s/aea6927790815ba69cc9cad50a7c15184f763344b76b67875f81fa70999f29617db035412878ba177538740341c4216c959cdcdbfa3a22540258f1d8a343d66a88bfa0e275f6ddbe37c1448bff6475dc18f2ffd495bb3a36d24871a864fc2210",
+            "eng name": "Qiyana"
+        },
+        "킨드레드": {
+            "image": "https://ww.namu.la/s/7e85fa72bd5cdfdd25ac80be8c2a7fdb6738de34a57f74043b742d588107a21db8b1bbb6e72d7f64c4fa0343ed51ba4a6e3d3fad25a6839a0e0b0794abd528e22eb9fcbfa6bc469310e967c73e1d760f5eb59a5a90456f0c24e09e3ddfc19fec",
+            "eng name": "Kindred"
+        },
+        "타릭": {
+            "image": "https://w.namu.la/s/834764cf98fc23b152968f87fd0509dca24d51a6e733f2cd3defd91e326ee5c56660e705d7f2c2eb0db298c75ed139d9a0f8128b7e9ede3114fb42f999603bfa874b27091c9c8a74d3b2c52c262c7c48b3c5de5c8d6ff1f5624568cfd58294b3",
+            "eng name": "Taric"
+        },
+        "탈론": {
+            "image": "https://ww.namu.la/s/db325b3cd43f365ee1727e25f630917430c876f93cbc8f293ba0117ebc06345abd59cdc7fd4d9abbd1aaa9571fc7dbadebf7be7c6435ce8fcfa3c3adc64228501010c69cce4dff64abef7d3d772a14aa80861e32a813fec0a9498945083cfd5e",
+            "eng name": "Talon"
+        },
+        "탈리아": {
+            "image": "https://ww.namu.la/s/deeb08151fa18de5fefcba557085d67c79031288a0bc96aa619c72eb1b23924f59a70225b6f86e30c848d6ea6819299d6e21b58839659df1d234757d740acb629467a7a5a76655bfb7d99bb29370fc6456268fe3d5cc765e1aa181bb9530f212",
+            "eng name": "Taliyah"
+        },
+        "탐 켄치": {
+            "image": "https://ww.namu.la/s/160b5a7e8b367ca468874c5eb3f5c880f0059056b710086dee0972e7c08988dff839b3ede47ab927ff1756087447afd7366927060a539a774a2d07f19aa3c40c860d63a4194778aec7cb6dde48e869da42f926339bdc277f1010a4ab69652560",
+            "eng name": "TahmKench"
+        },
+        "트런들": {
+            "image": "https://w.namu.la/s/e6480d8f9c15d28174c32a582a98e2665d6940ab59f921f5dc66706fb853406f9e6dcbeaf2b03aea7bac5f91570f975ae7a5b72c141c30bf60a26c735973b0f7ab860868c06ecc35e3e3cacec35e572d11651fd129dc36629d0d6d4219b64363",
+            "eng name": "Trundle"
+        },
+        "트리스타나": {
+            "image": "https://ww.namu.la/s/9390d5dea835ec3d5dcc68bf9433ee4063068db4a56b0c5363b0ac2b1c449d414efa16cff12d74af1328e2d4b14ed730cc6e0a2e5a77cbbce3ef168ae86eed5800a91684d949f2b7d0f60c0152d0636cd002b7d5c435628a334f5a4744790405",
+            "eng name": "Tristana"
+        },
+        "트린다미어": {
+            "image": "https://w.namu.la/s/7c4b549fae9b5896f32ffa2833d1f9036bd67b86f0d244b3b6e7d40249dfffffa06062a15bd4da4733030a5fb5789482870afe062a5ee870690eb0f71fe70e36e9193be3f7ecb73052ac262aae605042310bbb70fd4bbeb869ee49b2844b7d55",
+            "eng name": "Tryndamere"
+        },
+        "트위스티드 페이트": {
+            "image": "https://w.namu.la/s/5a28dc7b1d36dade3de069d95cea6151a9f99b8ac917fdfd9eb361346ff88b5c63782a6006c398a64537850df5280f82777e260be046446d25cbb6549d9895cbe2b18b4b1f515681d6d6ab8c0f98e76d6edcba37ceeff6d89aefbb5ebe243bd4",
+            "eng name": "TwistedFate"
+        },
+        "트위치": {
+            "image": "https://w.namu.la/s/4902a69e2d0b468b6ac2a0e803f1763b36894b5455aff036657924fd938a92f7001dd06846ef3156639a30d8e3f07c40214a478a4551dbcc510d3f101fbd6f15b17c35cfda77a953e8bb5340eb3fe6babb3b08fe088ffc78ea71f9b46aca6b64",
+            "eng name": "Twitch"
+        },
+        "티모": {
+            "image": "https://ww.namu.la/s/8e4a67c29c68834dd18dc75037ecca119c2e2377d4068acfb89699fade3b3b46ef4344b3d52fe4f7d269d6874139472af6e4a9b75e737dfc0697f82379c95b956970828aca7d04807bbe5aaacb0c2a4b73ed495206c64327ac04cfe71b04e4e8",
+            "eng name": "Teemo"
+        },
+        "파이크": {
+            "image": "https://ww.namu.la/s/32f0194ca57ec36ed84dae4c44046377800caf865f83170d3c00f97aeeff17066cb6c416401f0400cb1675ccb4c238dff6a9d6c539ea096d545c849fd3a9307026dbc0271640f9f58ec964ca987eda7a956632a6f4dbff641c86abc8ab738990",
+            "eng name": "Pyke"
+        },
+        "판테온": {
+            "image": "https://w.namu.la/s/3d616d355154869ea404b33c6431d757977fc3904df54698f9ce80be1a45264e34609b43db5a3271a9c18a105d7a7384937131e14bee67dc28d48ebc2f9f8466ac46bbffe355a5e57b64c14358d6d8b49a905949faa48be2877a2f7f80e68cd5",
+            "eng name": "Pantheon"
+        },
+        "피들스틱": {
+            "image": "https://ww.namu.la/s/cbc0bf5ba16f99a04645f10b58719cc13090aa11643217458fcad398c295ff806959fd384ff53228b00dae4a8bf1313b5d80785045149fb47e1b88971045a49910bdf7261f2ee1093de38716e10b187450c2a5409d0b536423c8230f3a6934cd",
+            "eng name": "Fiddlesticks"
+        },
+        "피오라": {
+            "image": "https://w.namu.la/s/3e047fa91be0bd484744453909f6a17da05fb1474671c3674d8eb3babefd90cd4b882f9eb8ecb4d9d90745fc95c10b43cdd3675c525d37d84b95b39c9ea3be4eb25b04cacfdc4804c8858a6b0e81d9cbded72681d553c5d9d0001290c19ec1da",
+            "eng name": "Fiora"
+        },
+        "피즈": {
+            "image": "https://w.namu.la/s/fe5da25ccd3694828968be1262751122bd8d95db1a947c9caebca2ef4e3d81cea8f233c9795b8a15ae37c57bbb6a22c118377f2a47cba03826b45d571409724d7b29f29ee13978b5912d4b4fa4dbc2eaae99e23cf10fab06b29dd16b6621fcac",
+            "eng name": "Fizz"
+        },
+        "하이머딩거": {
+            "image": "https://ww.namu.la/s/620e7f2b5860893b0519e4ef0c32245177c0faad847f96b5cbbe3186ab32f2336cd805753d12aeba7d670c78a2226191e2e85642b14d3331dae1e20c02dfe867aa13c1f2b029f272c6a539792bc92a478d97995413022db35c1ed23bc7886acb",
+            "eng name": "Heimerdinger"
+        },
+        "헤카림": {
+            "image": "https://ww.namu.la/s/17973882de547d4da76fc5fb587b8a369020694b7f6c966ca27b2ab1d4dfeca7ff90d2a2e53071ba058d83bc6b678eba82d710e36712224b180d3c28d0142eb8edd2837364a9ca72796bbd43015fe55b34b3f61f0e824d9ec5d76ffbf0d62129",
+            "eng name": "Hecarim"
+        }
+    },
+    "league_champions_list": [
+        "가렌",
+        "갈리오",
+        "갱플랭크",
+        "그라가스",
+        "그레이브즈",
+        "나르",
+        "나미",
+        "나서스",
+        "노틸러스",
+        "녹턴",
+        "누누와 월럼프",
+        "니달리",
+        "니코",
+        "다리우스",
+        "다이애나",
+        "드레이븐",
+        "라이즈",
+        "라칸",
+        "람머스",
+        "럭스",
+        "럼블",
+        "레넥톤",
+        "레오나",
+        "렉사이",
+        "렝가",
+        "루시안",
+        "룰루",
+        "르블랑",
+        "리 신",
+        "리븐",
+        "리산드라",
+        "마스터 이",
+        "마오카이",
+        "말자하",
+        "말파이트",
+        "모데카이저",
+        "모르가나",
+        "문도 박사",
+        "미스포츈",
+        "바드",
+        "바루스",
+        "바이",
+        "베이가",
+        "베인",
+        "벨코즈",
+        "볼리베어",
+        "브라움",
+        "브랜드",
+        "블라디미르",
+        "블리츠크랭크",
+        "빅토르",
+        "뽀삐",
+        "사이온",
+        "사일러스",
+        "샤코",
+        "세나",
+        "세주아니",
+        "세트",
+        "소나",
+        "소라카",
+        "쉔",
+        "쉬바나",
+        "스웨인",
+        "스카너",
+        "시비르",
+        "신 짜오",
+        "신드라",
+        "신지드",
+        "쓰레쉬",
+        "아리",
+        "아무무",
+        "아우렐리온 솔",
+        "아이번",
+        "아지르",
+        "아칼리",
+        "아트록스",
+        "아펠리오스",
+        "알리스타",
+        "애니",
+        "애니비아",
+        "애쉬",
+        "야스오",
+        "에코",
+        "엘리스",
+        "오공",
+        "오른",
+        "오리아나",
+        "올라프",
+        "요릭",
+        "우디르",
+        "우르곳",
+        "워윅",
+        "유미",
+        "이렐리아",
+        "이블린",
+        "이즈리얼",
+        "일라오이",
+        "자르반 4세",
+        "자야",
+        "자이라",
+        "자크",
+        "잔나",
+        "잭스",
+        "제드",
+        "제라스",
+        "제이스",
+        "조이",
+        "직스",
+        "진",
+        "질리언",
+        "징크스",
+        "초가스",
+        "카르마",
+        "카밀",
+        "카사딘",
+        "카서스",
+        "카시오페아",
+        "카이사",
+        "카직스",
+        "카타리나",
+        "칼리스타",
+        "케넨",
+        "케이틀린",
+        "케인",
+        "케일",
+        "코그모",
+        "코르키",
+        "퀸",
+        "클레드",
+        "키아나",
+        "킨드레드",
+        "타릭",
+        "탈론",
+        "탈리아",
+        "탐 켄치",
+        "트런들",
+        "트리스타나",
+        "트린다미어",
+        "트위스티드 페이트",
+        "트위치",
+        "티모",
+        "파이크",
+        "판테온",
+        "피들스틱",
+        "피오라",
+        "피즈",
+        "하이머딩거",
+        "헤카림"
     ],
     "img_dog_list": [
         "https://media3.giphy.com/media/mCRJDo24UvJMA/200.webp?cid=790b7611b97ca77ca07ffcf36a11076b0ea91ebeecc734c6&rid=200.webp",
@@ -21,11 +765,11 @@
         "https://media0.giphy.com/media/1rNzWL6GFvGR9epyij/giphy.webp?cid=790b7611b97ca77ca07ffcf36a11076b0ea91ebeecc734c6&rid=giphy.webp",
         "https://media2.giphy.com/media/3o7TKSha51ATTx9KzC/giphy.webp?cid=790b7611b97ca77ca07ffcf36a11076b0ea91ebeecc734c6&rid=giphy.webp"
     ],
-    "price": "131",
+    "price": "145",
     "wallet": {
         "tmdghks#2420": {
-            "\uc794\uc561": "1000",
-            "\uc0c1\ucd94": "0"
+            "잔액": "1000",
+            "상추": "0"
         }
     }
 }
